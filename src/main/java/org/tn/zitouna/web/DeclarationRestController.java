@@ -3,7 +3,6 @@ package org.tn.zitouna.web;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,7 +20,6 @@ import org.tn.zitouna.service.HistoriqueModificationsService;
 import org.tn.zitouna.service.ListeDestinataireService;
 
 @RestController
-@CrossOrigin("*")
 public class DeclarationRestController {
 	private ApprobationDocumentService approbationDocumentService;
 	private DeclarationService declarationService;

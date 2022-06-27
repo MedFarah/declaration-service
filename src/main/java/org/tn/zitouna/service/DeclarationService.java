@@ -13,7 +13,6 @@ public class DeclarationService implements IDeclaration<Declaration,String> {
 	
 	@Autowired
 	public DeclarationService(DeclarationRepository declarationRepository) {
-		super();
 		this.declarationRepository = declarationRepository;
 	}
 

@@ -6,13 +6,7 @@ pipeline {
 	}
     agent any  
     stages {
-        stage("git"){
-            steps {
-            git branch: 'master',
-            url: 'https://github.com/MedFarah/declaration-service.git',
-            credentialsId: 'b5259977-6741-44a5-8499-57ec3d76ce2e'
-            }
-        }
+       
 		stage("build project") {
 				agent any
 				steps {
